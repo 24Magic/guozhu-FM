@@ -1,0 +1,28 @@
+{
+  "name": "mike-music02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "entry.js",
+  "dependencies": {
+    "css-loader": "^0.28.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-minify-css": "^1.2.4",
+    "style-loader": "^0.16.1",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+  },
+  
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "less": "lessc src/css/index.less style.css",
+    "postcss": "postcss -u autoprefixer -r index.css"
+  },
+  "keywords": [
+    "fm"
+  ],
+  "author": "mike",
+  "license": "ISC"
+}
