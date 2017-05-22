@@ -743,8 +743,7 @@ var music = (function() {
                     let author = '- ' + (ret.song[0].artist || '无名艺术家')
                     let picture = ret.song[0].picture || 'imgs/Image-Wukong-001.png'   
                     let _url = ret.song[0].url
-                    let lrc = 'https://bird.ioliu.cn/v1/?url=' + ret.song[0].lrc
-                    console.log(lrc)
+                    let lrc = ret.song[0].lrc
                     _this.audio.src = _url
                     _this.audio.play()
                     _this.imgNode.setAttribute('src', picture)
