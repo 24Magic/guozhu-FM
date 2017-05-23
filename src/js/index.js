@@ -12,7 +12,7 @@ var music = (function() {
         this.dataList = [
         {number: 1, channel: '热歌', title: '曹操', author: '林俊杰', picture:'imgs/Image-Linjunjie.jpg', url: 'audios/曹操.mp3', lrc: 'http://musicdata.baidu.com/data2/lrc/203c381ae532ec2adb9b558817aac762/535889870/535889870.lrc'},
         {number: 2, channel: '儿歌', title: '狼犬福克', author: '小蓓蕾组合', picture: 'imgs/Image-Xiaobeilei.jpg', url: 'audios/狼犬福克.mp3', lrc: 'http://musicdata.baidu.com/data2/lrc/1537be34a0bd16c3f84fc4329a9e9064/265853345/265853345.lrc'},
-        {number: 3, channel: '轻松假日', title: '我在人民广场吃炸鸡', author: '阿肆', picture: 'imgs/Image-Asi.jpg', url: 'audios/我在人民广场吃炸鸡.mp3', lrc: path.join(__dirname, './audios/我在人民广场吃炸鸡.lrc')}
+        {number: 3, channel: '90后', title: '千里之外', author: '周杰伦', picture: 'imgs/Image-Zhoujielun.jpg', url: 'audios/千里之外.mp3', lrc: 'http://musicdata.baidu.com/data2/lrc/4a9852299981e1b5dea5df1ec2d35c81/274041319/274041319.lrc'}
         ]
         
         
@@ -974,10 +974,3 @@ var music = (function() {
     }
 })()
 module.exports = music
-
-/*
-
-ssh  1026400757@47.91.156.35
-密码：renwubanhuguozhu
-
-*/
