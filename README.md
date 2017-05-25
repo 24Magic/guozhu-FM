@@ -12,7 +12,7 @@ Ssreenshot
 
 ![screenshot.png](./src/imgs/Image-screenshot.png)
 
-Install
+## Install
 
 `$ npm install guozhuFM --save`
 
@@ -34,10 +34,10 @@ $ npm run css
 $ npm run dev
 ```
 
-##Author
+## Author
 
 Mike Hu
 
-##License
+## License
 
 ISC
