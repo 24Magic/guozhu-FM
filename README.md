@@ -1,6 +1,6 @@
 # guozhu-FM
 
-- Amazing, a html5 music FM of little small-fresh.
+   Amazing, a html5 music FM of little small-fresh.
 
 ## Introduction
 
@@ -10,7 +10,7 @@
 
 Ssreenshot
 
-[!screenshot](./imgs/Image-screenshot.png)
+![screenshot](./imgs/Image-screenshot.png)
 
 Install
 
@@ -18,7 +18,7 @@ Install
 
 ## Usage
 
-See docs
+See [docs](FM.gzbamboo.org/docs)
 
 ## Run in development
 
@@ -34,10 +34,10 @@ $ npm run css
 $ npm run dev
 ```
 
-Author
+##Author
 
 Mike Hu
 
-License
+##License
 
 ISC
