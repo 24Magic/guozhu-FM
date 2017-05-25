@@ -18,7 +18,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "less": "lessc src/css/index.less style.css",
-    "postcss": "postcss -u autoprefixer -r index.css"
+    "postcss": "postcss -u autoprefixer -r index.css",
+    "css": "gulp css",
+    "dev": "webpack"
   },
   "keywords": [
     "fm"
