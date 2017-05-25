@@ -10,7 +10,7 @@
 
 Ssreenshot
 
-![screenshot](./imgs/Image-screenshot.png)
+![screenshot.png](./src/imgs/Image-screenshot.png)
 
 Install
 
