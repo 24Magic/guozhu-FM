@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Node.js\\node.exe',
+1 verbose cli   'D:\\Node.js\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'login' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.3
+4 verbose adduser before first PUT { _id: 'org.couchdb.user:24-magic',
+4 verbose adduser   name: '24-magic',
+4 verbose adduser   password: 'XXXXX',
+4 verbose adduser   email: '15381087533@163.com',
+4 verbose adduser   type: 'user',
+4 verbose adduser   roles: [],
+4 verbose adduser   date: '2017-05-29T09:46:40.270Z' }
+5 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic
+6 verbose request new user, so can't send auth
+7 info attempt registry request try #1 at 17:46:40
+8 verbose request id b26b1cec5490f6b3
+9 http request PUT https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic
+10 http 409 https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic
+11 verbose headers { date: 'Mon, 29 May 2017 09:46:42 GMT',
+11 verbose headers   'content-type': 'application/json; charset=utf-8',
+11 verbose headers   'content-length': '61',
+11 verbose headers   connection: 'keep-alive',
+11 verbose headers   'x-current-requests': '1',
+11 verbose headers   'x-readtime': '13' }
+12 verbose request invalidating C:\Users\姣\AppData\Roaming\npm-cache\registry.npm.taobao.org\-\user\org.couchdb.user_3A24-magic on PUT
+13 verbose adduser update existing user
+14 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic?write=true
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 17:46:41
+17 http request GET https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic?write=true
+18 http 200 https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic?write=true
+19 verbose headers { date: 'Mon, 29 May 2017 09:46:42 GMT',
+19 verbose headers   'content-type': 'application/json; charset=utf-8',
+19 verbose headers   'content-length': '228',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'x-current-requests': '1',
+19 verbose headers   etag: '"e4-SATCW5vqWwuqVj/tYMc4kNmQ0lI"',
+19 verbose headers   'x-readtime': '3' }
+20 verbose adduser userobj { _id: 'org.couchdb.user:24-magic',
+20 verbose adduser   name: '24-magic',
+20 verbose adduser   password: 'XXXXX',
+20 verbose adduser   email: '15381087533@163.com',
+20 verbose adduser   type: 'user',
+20 verbose adduser   roles: [],
+20 verbose adduser   date: '2017-05-29T09:46:40.270Z' }
+21 verbose request uri https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic/-rev/undefined
+22 verbose request updating existing user; sending authorization
+23 info attempt registry request try #1 at 17:46:41
+24 http request PUT https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic/-rev/undefined
+25 http 401 https://registry.npm.taobao.org/-/user/org.couchdb.user:24-magic/-rev/undefined
+26 verbose headers { date: 'Mon, 29 May 2017 09:46:42 GMT',
+26 verbose headers   'content-type': 'application/json; charset=utf-8',
+26 verbose headers   'content-length': '47',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-current-requests': '1',
+26 verbose headers   'x-readtime': '8' }
+27 verbose request invalidating C:\Users\姣\AppData\Roaming\npm-cache\registry.npm.taobao.org\-\user\org.couchdb.user_3A24-magic on PUT
+28 verbose adduser back [ { Error: unauthorized Login first: -/user/org.couchdb.user:24-magic/-rev/undefined
+28 verbose adduser       at makeError (D:\Node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:304:12)
+28 verbose adduser       at CachingRegistryClient.<anonymous> (D:\Node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:292:14)
+28 verbose adduser       at Request._callback (D:\Node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:212:14)
+28 verbose adduser       at Request.self.callback (D:\Node.js\node_modules\npm\node_modules\request\request.js:186:22)
+28 verbose adduser       at emitTwo (events.js:106:13)
+28 verbose adduser       at Request.emit (events.js:194:7)
+28 verbose adduser       at Request.<anonymous> (D:\Node.js\node_modules\npm\node_modules\request\request.js:1081:10)
+28 verbose adduser       at emitOne (events.js:96:13)
+28 verbose adduser       at Request.emit (events.js:191:7)
+28 verbose adduser       at IncomingMessage.<anonymous> (D:\Node.js\node_modules\npm\node_modules\request\request.js:1001:12) statusCode: 401, code: 'E401' },
+28 verbose adduser   { error: 'unauthorized', reason: 'Login first' },
+28 verbose adduser   '{"error":"unauthorized","reason":"Login first"}' ]
+29 warn adduser Incorrect username or password
+29 warn adduser You can reset your account by visiting:
+29 warn adduser
+29 warn adduser     https://npmjs.org/forgot
+30 verbose stack Error: unauthorized Login first: -/user/org.couchdb.user:24-magic/-rev/undefined
+30 verbose stack     at makeError (D:\Node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:304:12)
+30 verbose stack     at CachingRegistryClient.<anonymous> (D:\Node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:292:14)
+30 verbose stack     at Request._callback (D:\Node.js\node_modules\npm\node_modules\npm-registry-client\lib\request.js:212:14)
+30 verbose stack     at Request.self.callback (D:\Node.js\node_modules\npm\node_modules\request\request.js:186:22)
+30 verbose stack     at emitTwo (events.js:106:13)
+30 verbose stack     at Request.emit (events.js:194:7)
+30 verbose stack     at Request.<anonymous> (D:\Node.js\node_modules\npm\node_modules\request\request.js:1081:10)
+30 verbose stack     at emitOne (events.js:96:13)
+30 verbose stack     at Request.emit (events.js:191:7)
+30 verbose stack     at IncomingMessage.<anonymous> (D:\Node.js\node_modules\npm\node_modules\request\request.js:1001:12)
+31 verbose statusCode 401
+32 verbose cwd C:\Users\姣\desktop\new\guozhu-FM
+33 error Windows_NT 10.0.15063
+34 error argv "D:\\Node.js\\node.exe" "D:\\Node.js\\node_modules\\npm\\bin\\npm-cli.js" "login"
+35 error node v7.7.3
+36 error npm  v4.1.2
+37 error code E401
+38 error unauthorized Login first: -/user/org.couchdb.user:24-magic/-rev/undefined
+39 error If you need help, you may report this error at:
+39 error     <https://github.com/npm/npm/issues>
+40 verbose exit [ 1, true ]

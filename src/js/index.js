@@ -344,7 +344,6 @@ var music = (function() {
             let vol = _this.audio.volume = percent    
             _this.volumeChangeNode.style.width = percent * 100 + '%'
             _this.volume = vol
-            
 
         })
 

@@ -1,5 +1,5 @@
 {
-  "name": "mike-music02",
+  "name": "mike-fm",
   "version": "1.0.0",
   "description": "",
   "main": "entry.js",
@@ -12,9 +12,10 @@
     "style-loader": "^0.16.1",
     "webpack": "^2.4.1"
   },
-  "devDependencies": {
-  },
-  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/24Magic/guozhu-FM"
+  },  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "less": "lessc src/css/index.less style.css",
