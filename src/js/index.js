@@ -164,10 +164,12 @@ var music = (function() {
             }                       
         })
 
-        document.querySelector('body').addEventListener('onkeydown', function(e){
-            console.log(e.keyCode || e.which)
+            //键盘上按下'空格键'暂停/播放
+            //键盘上按下'向右键'播放下一首
+        window.addEventListener('keydown', function(e){
+            
             if(e.keyCode === 32){
-                var icon = this.querySelector('.iconfont')
+                var icon = _this.playButton.querySelector('.iconfont')
                 if (icon.classList.contains('icon-play')) {
                     _this.audio.play()
                 } else {         
@@ -176,7 +178,15 @@ var music = (function() {
                 icon.classList.toggle('icon-pause')
                 icon.classList.toggle('icon-play')
             }
-            
+            if(e.keyCode === 39){
+                let p = document.querySelectorAll('.point')
+                if(g===p.length-1){
+                    g = -2
+                    loop()
+                }
+
+                loop()
+            }
         })
 
             //播放/暂停的切换
